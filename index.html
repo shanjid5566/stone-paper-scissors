@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rock paper scissors game</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="bg-gray-300 text-center">
+    <header
+      class="h-[5rem] text-3xl bg-black text-white flex justify-center items-center"
+    >
+      <h1>Rock Paper Scissors</h1>
+    </header>
+    <div
+      class="flex items-center justify-center gap-2 md:gap-6 mt-6"
+      id="choices"
+    >
+      <div
+        class="w-32 h-32 md:w-44 md:h-44 rounded-full flex justify-center items-center hover:bg-[#AF7A6D] hover:cursor-pointer choice"
+        id="rock"
+      >
+        <img
+          src="./src/image/rock.png"
+          alt=""
+          class="w-28 h-28 md:h-40 md:w-40 rounded-full object-cover"
+        />
+      </div>
+      <div
+        class="w-32 h-32 md:w-44 md:h-44 rounded-full flex justify-center items-center hover:bg-[#AF7A6D] hover:cursor-pointer choice"
+        id="paper"
+      >
+        <img
+          src="./src/image/paper.png"
+          alt=""
+          class="w-28 h-28 md:h-40 md:w-40 rounded-full object-cover"
+        />
+      </div>
+      <div
+        class="w-32 h-32 md:w-44 md:h-44 rounded-full flex justify-center items-center hover:bg-[#AF7A6D] hover:cursor-pointer choice"
+        id="scissor">
+        <img
+          src="./src/image/scissors.png"
+          alt=""
+          class="w-28 h-28 md:h-40 md:w-40 rounded-full object-cover"
+        />
+      </div>
+    </div>
+    <div class="flex justify-center items-center mt-3">
+      <div class="flex flex-row space-x-4 gap-2">
+        <div class="text-center">
+          <p class="text-2xl md:text-4xl m-2 user">0</p>
+          <p class="text-2xl md:text-4xl text-bold">User</p>
+        </div>
+        <div class="text-center">
+          <p class="text-2xl md:text-4xl m-2 computer">0</p>
+          <p class="text-2xl md:text-4xl text-bold">Computer</p>
+        </div>
+      </div>
+    </div>
+    <div class="inline-block text-center bg-[#CCC7B9] mt-6 rounded-4xl msg-container">
+      <div class="flex items-center justify-center">
+        <p class="text-2xl md:text-4xl p-6 msg">Play your move.</p>
+      </div>
+    </div>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
